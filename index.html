@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAHAB ZADA | Premium</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{
+font-family:Arial,sans-serif;
+background:#080808;color:white;
+}
+header{
+position:fixed;top:0;width:100%;
+padding:22px 8%;display:flex;
+justify-content:space-between;align-items:center;
+background:#080808eF;z-index:10;
+border-bottom:1px solid #b88b35;
+}
+.logo{color:#e8bd62;font-size:25px;font-weight:bold;letter-spacing:3px}
+nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:#e8bd62}
+.hero{
+min-height:100vh;display:flex;
+flex-direction:column;justify-content:center;
+align-items:center;text-align:center;padding:100px 20px;
+background:radial-gradient(ellipse at center,#33240d,#080808 65%);
+}
+.hero small{color:#e8bd62;letter-spacing:5px}
+.hero h1{
+font-size:clamp(45px,9vw,95px);
+color:#f3d18a;margin:25px 0;
+text-shadow:0 0 25px #b88b35;
+animation:glow 3s infinite alternate;
+}
+.hero p{color:#ccc;max-width:600px;line-height:1.8}
+.btn{
+display:inline-block;margin-top:30px;
+padding:15px 30px;border:1px solid #e8bd62;
+color:#e8bd62;text-decoration:none;
+border-radius:30px;transition:.3s;
+}
+.btn:hover{background:#e8bd62;color:black;transform:scale(1.06)}
+section{padding:100px 8%;text-align:center}
+h2{font-size:38px;color:#e8bd62;margin-bottom:20px}
+.desc{color:#bbb;line-height:1.8;max-width:650px;margin:0 auto}
+.cards{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;margin-top:45px;
+}
+.card{
+padding:35px 20px;border:1px solid #765722;
+border-radius:15px;background:linear-gradient(145deg,#1b160d,#0b0b0b);
+transition:.3s;
+}
+.card:hover{transform:translateY(-10px);border-color:#f3d18a;box-shadow:0 0 25px #b88b3540}
+.card h3{color:#e8bd62;margin-bottom:15px}
+.card p{color:#bbb;line-height:1.7}
+.about{background:#100d08}
+.contact a{color:#e8bd62}
+footer{padding:30px;text-align:center;color:#999;border-top:1px solid #5b4520}
+@keyframes glow{
+from{text-shadow:0 0 10px #b88b35}
+to{text-shadow:0 0 35px #f3d18a,0 0 60px #b88b35}
+}
+@media(max-width:600px){
+header{padding:18px 5%;flex-direction:column;gap:15px}
+nav a{margin:0 7px;font-size:12px}
+section{padding:80px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">SAHAB ZADA</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#features">Features</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<small>WELCOME TO THE ROYAL WORLD</small>
+<h1>SAHAB ZADA</h1>
+<p>A premium digital experience. Discover elegance, creativity and a world of possibilities.</p>
+<a href="#about" class="btn">EXPLORE NOW</a>
+</div>
+
+<section id="about" class="about">
+<h2>ABOUT US</h2>
+<p class="desc">Welcome to SAHAB ZADA. A modern premium website created with style, creativity and passion. Explore our digital world.</p>
+</section>
+
+<section id="features">
+<h2>OUR FEATURES</h2>
+<p class="desc">Discover something special in every section.</p>
+<div class="cards">
+<div class="card"><h3>✨ Premium Design</h3><p>Beautiful black and gold luxury design.</p></div>
+<div class="card"><h3>🚀 Modern Style</h3><p>Modern layout with smooth animations.</p></div>
+<div class="card"><h3>📱 Responsive</h3><p>Works on laptops, tablets and phones.</p></div>
+</div>
+</section>
+
+<section class="about">
+<h2>OUR WORLD</h2>
+<p class="desc">A place for creativity, ideas and inspiration. This is SAHAB ZADA.</p>
+</section>
+
+<section id="contact" class="contact">
+<h2>CONTACT</h2>
+<p class="desc">Thank you for visiting SAHAB ZADA.</p>
+<a class="btn" href="mailto:hello@example.com">CONTACT US</a>
+</section>
+
+<footer>
+© 2026 SAHAB ZADA | All Rights Reserved
+</footer>
+
+</body>
+</html>
