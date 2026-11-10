@@ -87,26 +87,39 @@ section{padding:80px 6%}
   text-align: center;
   padding: 20px;
   color: white;
-  animation: introFade 1.5s ease;
 }
 
 #royal-intro .crown {
-  font-size: 65px;
+  font-size: 60px;
   animation: crownGlow 2s infinite alternate;
 }
 
 #royal-intro h1 {
   color: #e9c568;
-  font-size: clamp(35px, 8vw, 75px);
-  letter-spacing: 8px;
+  font-size: clamp(30px, 8vw, 75px);
+  letter-spacing: 5px;
   text-shadow: 0 0 25px #d6a83b;
-  margin: 20px 0;
+  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#royal-intro .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.1);
+  animation: letterReveal 0.65s ease-out forwards;
+  animation-delay: var(--delay);
+}
+
+#royal-intro .space {
+  width: 0.3em;
 }
 
 #royal-intro p {
   color: #ddd;
   letter-spacing: 3px;
-  margin-bottom: 35px;
 }
 
 #royal-intro button {
@@ -119,7 +132,7 @@ section{padding:80px 6%}
   font-weight: bold;
   letter-spacing: 3px;
   cursor: pointer;
-  transition: 0.4s;
+  margin-top: 25px;
 }
 
 #royal-intro button:hover {
@@ -128,30 +141,56 @@ section{padding:80px 6%}
   box-shadow: 0 0 30px #d6ad55;
 }
 
+@keyframes letterReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+    filter: blur(10px);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @keyframes crownGlow {
   from { transform: scale(1); }
   to { transform: scale(1.15); }
-}
-
-@keyframes introFade {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 </style>
 
 <div id="royal-intro">
   <div class="crown">👑</div>
   <p>WELCOME TO THE ROYAL WORLD</p>
-  <h1>SAHAB ZADA</h1>
+
+  <h1>
+    <span class="letter" style="--delay:0.5s">S</span>
+    <span class="letter" style="--delay:1s">A</span>
+    <span class="letter" style="--delay:1.5s">H</span>
+    <span class="letter" style="--delay:2s">A</span>
+    <span class="letter" style="--delay:2.5s">B</span>
+    <span class="space"></span>
+    <span class="letter" style="--delay:3s">Z</span>
+    <span class="letter" style="--delay:3.5s">A</span>
+    <span class="letter" style="--delay:4s">D</span>
+    <span class="letter" style="--delay:4.5s">A</span>
+  </h1>
+
   <p>✦ ELEGANCE • LUXURY • CREATIVITY ✦</p>
+
   <button onclick="document.getElementById('royal-intro').style.display='none'">
     ENTER WEBSITE
   </button>
-  <p style="font-size:12px;color:#b99b60;margin-top:35px;">
+
+  <p style="font-size:12px;color:#b99b60;margin-top:30px;">
     © 2026 SAHAB ZADA
   </p>
 </div>
-
 <header>
 <div class="logo">SAHAB ZADA</div>
 <nav>
