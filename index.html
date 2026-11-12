@@ -3,375 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="J82VEK6YcNMxxjO6sAn1hFtoxKVRaF_-838kY221Oew" />
-<title>SAHAB ZADA | Premium</title>
-
+<meta name="google-site-verification" content="J82VEK6YcNMxxjO6sAn1hFtoxKVRaF_-838kY221Oew">
+<title>SHAHAB ZADA | Official Website</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{
-font-family:Arial,sans-serif;
-background:#080808;color:white;
-}
-header{
-position:fixed;top:0;width:100%;
-padding:22px 8%;display:flex;
-justify-content:space-between;align-items:center;
-background:#080808eF;z-index:10;
-border-bottom:1px solid #b88b35;
-}
-.logo{color:#e8bd62;font-size:25px;font-weight:bold;letter-spacing:3px}
-nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
-nav a:hover{color:#e8bd62}
-.hero{
-min-height:100vh;display:flex;
-flex-direction:column;justify-content:center;
-align-items:center;text-align:center;padding:100px 20px;
-background:radial-gradient(ellipse at center,#33240d,#080808 65%);
-}
-.hero small{color:#e8bd62;letter-spacing:5px}
-.hero h1{
-font-size:clamp(45px,9vw,95px);
-color:#f3d18a;margin:25px 0;
-text-shadow:0 0 25px #b88b35;
-animation:glow 3s infinite alternate;
-}
-.hero p{color:#ccc;max-width:600px;line-height:1.8}
-.btn{
-display:inline-block;margin-top:30px;
-padding:15px 30px;border:1px solid #e8bd62;
-color:#e8bd62;text-decoration:none;
-border-radius:30px;transition:.3s;
-}
-.btn:hover{background:#e8bd62;color:black;transform:scale(1.06)}
-section{padding:100px 8%;text-align:center}
-h2{font-size:38px;color:#e8bd62;margin-bottom:20px}
-.desc{color:#bbb;line-height:1.8;max-width:650px;margin:0 auto}
-.cards{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:22px;margin-top:45px;
-}
-.card{
-  position:relative;
-  overflow:hidden;
-  padding:25px 20px;
-  border:1px solid #d6ad55;
-  border-radius:20px;
-  background:linear-gradient(145deg,#29200c,#080808 65%);
-  box-shadow:0 8px 25px rgba(214,173,85,.12);
-  transition:all .4s ease;
-}
-
-.card:hover{
-  transform:translateY(-12px) scale(1.03);
-  border-color:#ffe09a;
-  box-shadow:0 15px 40px rgba(214,173,85,.4),
-             0 0 25px rgba(214,173,85,.25);
-}
-
-.card img,.card video{
-  border-radius:14px;
-  transition:transform .5s ease;
-}
-
-.card:hover img,.card:hover video{
-  transform:scale(1.06);
-}
-
-.card h3{color:#e8bd62;margin-bottom:15px}
-.card p{color:#bbb;line-height:1.7}
-.about{background:#100d08}
-.contact a{color:#e8bd62}
-footer{padding:30px;text-align:center;color:#999;border-top:1px solid #5b4520}
-@keyframes glow{
-from{text-shadow:0 0 10px #b88b35}
-to{text-shadow:0 0 35px #f3d18a,0 0 60px #b88b35}
-}
-@media(max-width:600px){
-header{padding:18px 5%;flex-direction:column;gap:15px}
-nav a{margin:0 7px;font-size:12px}
-section{padding:80px 6%}
-}
-/* SAHAB ZADA 3D CARD EFFECT */
-
-.cards .card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(214, 173, 85, 0.35);
-  transition: transform 0.4s ease,
-              box-shadow 0.4s ease,
-              border-color 0.4s ease;
-}
-
-.cards .card:hover {
-  transform: translateY(-12px) scale(1.03);
-  border-color: #e9c568;
+:root{--gold:#f2c34f;--gold2:#b77b16;--black:#050505}
+body{font-family:Arial,sans-serif;background:var(--black);color:#fff}
+header{min-height:68px;position:fixed;inset:0 0 auto;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:12px 5%;background:rgba(0,0,0,.94);border-bottom:1px solid #b88b35}
+.logo{font-family:Georgia,serif;color:var(--gold);font-size:clamp(16px,2vw,24px);font-weight:bold;letter-spacing:1px;white-space:nowrap}
+nav{display:flex;align-items:center;gap:clamp(10px,2vw,25px);flex-wrap:wrap;justify-content:center}
+nav a{color:#fff;text-decoration:none;font-size:13px;transition:.25s}
+nav a:hover{color:var(--gold)}
+.subscribe{background:linear-gradient(135deg,#ffe49a,#d89b22);color:#171006;padding:10px 16px;border-radius:7px;font-weight:bold;text-decoration:none;font-size:12px;white-space:nowrap}
+.hero{min-height:100vh;padding:115px 18px 35px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,.16),rgba(0,0,0,.52)),url("https://images.unsplash.com/photo-1693590614566-1d3ea9ef32f7?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.12),rgba(0,0,0,.62));pointer-events:none}
+.hero:after{content:"";position:absolute;inset:13px;border:1px solid rgba(242,195,79,.7);box-shadow:inset 0 0 25px rgba(242,195,79,.12);pointer-events:none}
+.hero-content{position:relative;z-index:2;width:min(900px,100%)}
+.bismillah{font-family:Georgia,serif;color:#ffd34f;font-size:clamp(28px,4vw,48px);text-shadow:0 0 16px #e7a91c;margin-bottom:12px}
+.hero h1{font-family:Georgia,serif;font-size:clamp(42px,7vw,82px);letter-spacing:3px;color:#f4c34d;text-shadow:0 3px 3px #3b2100,0 0 24px rgba(255,190,40,.7);margin:5px 0}
+.hero .tagline{font-size:clamp(16px,2vw,23px);font-weight:bold;text-shadow:0 2px 5px #000;margin:4px 0 14px}
+.hero .subline{color:#ffe4a0;letter-spacing:1px;font-size:14px;text-shadow:0 2px 5px #000}
+.btn{display:inline-block;margin:22px 0 28px;padding:12px 25px;border-radius:30px;background:linear-gradient(135deg,#ffe69a,#e9ae28);color:#201300;text-decoration:none;font-weight:bold;font-size:13px;box-shadow:0 0 18px rgba(246,190,52,.4);transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 28px rgba(246,190,52,.8)}
+.quick-links{position:relative;z-index:2;display:flex;justify-content:center;align-items:flex-start;gap:clamp(12px,3vw,42px);flex-wrap:wrap;margin-top:2px}
+.quick-link{width:76px;color:#fff;text-decoration:none;font-size:12px;text-shadow:0 2px 4px #000;display:flex;flex-direction:column;align-items:center;gap:7px}
+.quick-icon{width:52px;height:52px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-size:25px;color:var(--gold);background:rgba(0,0,0,.58);box-shadow:0 0 13px rgba(242,195,79,.28);transition:.3s}
+.quick-link:hover .quick-icon{background:var(--gold);color:#111;transform:translateY(-5px);box-shadow:0 0 22px var(--gold)}
+section{padding:85px 8%;text-align:center}
+.section-title{font-family:Georgia,serif;color:var(--gold);font-size:clamp(27px,4vw,40px);margin-bottom:18px}
+.desc{max-width:700px;margin:auto;color:#ccc;line-height:1.8}
+.dark-section{background:linear-gradient(145deg,#171006,#080808)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;margin-top:38px}
+.card{padding:28px 20px;border:1px solid rgba(242,195,79,.55);border-radius:15px;background:linear-gradient(145deg,#211909,#090909);transition:.3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgba(242,195,79,.2);border-color:#ffe39a}
+.card .symbol{font-size:35px;margin-bottom:13px}
+.card h3{color:var(--gold);margin-bottom:10px}
+.card p{color:#bbb;line-height:1.7;font-size:14px}
+  .madinah-card {
+  border: 1px solid #f2c34f;
   box-shadow:
-    0 15px 35px rgba(214, 173, 85, 0.25),
-    0 0 25px rgba(214, 173, 85, 0.18);
+    0 0 15px rgba(242,195,79,.5),
+    0 0 30px rgba(242,195,79,.25);
 }
 
-.cards .card img {
-  transition: transform 0.5s ease;
+.madinah-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 22px #d6a83b;
 }
-
-.cards .card:hover img {
-  transform: scale(1.08);
-}
-/* SAHAB ZADA 3D CARD EFFECT */
-
-.cards .card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(214, 173, 85, 0.35);
-  transition: transform 0.4s ease,
-              box-shadow 0.4s ease,
-              border-color 0.4s ease;
-}
-
-.cards .card:hover {
-  transform: translateY(-12px) scale(1.03);
-  border-color: #e9c568;
-  box-shadow:
-    0 15px 35px rgba(214, 173, 85, 0.25),
-    0 0 25px rgba(214, 173, 85, 0.18);
-}
-
-.cards .card img {
-  transition: transform 0.5s ease;
-}
-
-.cards .card:hover img {
-  transform: scale(1.08);
+.about-panel{background:linear-gradient(145deg,#171006,#080808)}
+.contact-link{display:inline-block;margin-top:25px;background:#168c4b;color:#fff;padding:14px 25px;border-radius:30px;text-decoration:none;font-weight:bold}
+footer{text-align:center;padding:25px 15px;color:#aaa;border-top:1px solid #73551e;font-size:13px}
+@media(max-width:700px){
+ header{justify-content:center;gap:10px;padding:10px 4%}
+ nav{width:100%;gap:13px}
+ nav a{font-size:12px}
+ .subscribe{padding:8px 12px}
+ .hero{padding-top:145px}
+ .quick-links{gap:15px}
+ .quick-link{width:68px}
+ .quick-icon{width:48px;height:48px}
+ section{padding:70px 6%}
 }
 </style>
 </head>
-
 <body>
-  <style>
-#royal-intro {
-  position: fixed;
-  inset: 0;
-  z-index: 99999;
-  background: radial-gradient(circle, #29200c, #050505 75%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  color: white;
-}
-
-#royal-intro .crown {
-  font-size: 60px;
-  animation: crownGlow 2s infinite alternate;
-}
-
-#royal-intro h1 {
-  color: #e9c568;
-  font-size: clamp(30px, 8vw, 75px);
-  letter-spacing: 5px;
-  text-shadow: 0 0 25px #d6a83b;
-  margin: 25px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#royal-intro .letter {
-  display: inline-block;
-  opacity: 0;
-  transform: scale(0.1);
-  animation: letterReveal 0.65s ease-out forwards;
-  animation-delay: var(--delay);
-}
-
-#royal-intro .space {
-  width: 0.3em;
-}
-
-#royal-intro p {
-  color: #ddd;
-  letter-spacing: 3px;
-}
-
-#royal-intro button {
-  padding: 16px 38px;
-  border: 2px solid #d6ad55;
-  border-radius: 40px;
-  background: transparent;
-  color: #e9c568;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  cursor: pointer;
-  margin-top: 25px;
-}
-
-#royal-intro button:hover {
-  background: #d6ad55;
-  color: black;
-  box-shadow: 0 0 30px #d6ad55;
-}
-
-@keyframes letterReveal {
-  0% {
-    opacity: 0;
-    transform: scale(0.1);
-    filter: blur(10px);
-  }
-  70% {
-    opacity: 1;
-    transform: scale(1.2);
-    filter: blur(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes crownGlow {
-  from { transform: scale(1); }
-  to { transform: scale(1.15); }
-}
-</style>
-
-<div id="royal-intro">
-  <div class="crown">👑</div>
-  <p>WELCOME TO THE ROYAL WORLD</p>
-
-  <h1>
-    <span class="letter" style="--delay:0.5s">S</span>
-    <span class="letter" style="--delay:1s">A</span>
-    <span class="letter" style="--delay:1.5s">H</span>
-    <span class="letter" style="--delay:2s">A</span>
-    <span class="letter" style="--delay:2.5s">B</span>
-    <span class="space"></span>
-    <span class="letter" style="--delay:3s">Z</span>
-    <span class="letter" style="--delay:3.5s">A</span>
-    <span class="letter" style="--delay:4s">D</span>
-    <span class="letter" style="--delay:4.5s">A</span>
-  </h1>
-
-  <p>✦ ELEGANCE • LUXURY • CREATIVITY ✦</p>
-
-  <button onclick="document.getElementById('royal-intro').style.display='none'">
-    ENTER WEBSITE
-  </button>
-
-  <p style="font-size:12px;color:#b99b60;margin-top:30px;">
-    © 2026 SAHAB ZADA
-  </p>
-</div>
 <header>
-<div class="logo">SAHAB ZADA</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#features">Features</a>
-<a href="#contact">Contact</a>
-</nav>
+  <div class="logo">SHAHAB ZADA</div>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#features">FEATURES</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <a class="subscribe" href="#contact">SUBSCRIBE</a>
 </header>
-
-<div class="hero" id="home">
-<small>WELCOME TO THE ROYAL WORLD</small>
-<h1>SAHAB ZADA</h1>
-<p>A premium digital experience. Discover elegance, creativity and a world of possibilities.</p>
-<a href="#about" class="btn">EXPLORE NOW</a>
-</div>
-
-<section id="about" class="about">
-<h2>ABOUT US</h2>
-<p class="desc">Welcome to SAHAB ZADA. A modern premium website created with style, creativity and passion. Explore our digital world.</p>
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="bismillah">﷽</div>
+    <div class="subline">WELCOME TO</div>
+    <h1>SHAHAB ZADA</h1>
+    <p class="tagline">THE BEAUTY OF ISLAMIC WORLD</p>
+    <p class="subline">✦ INSPIRATION • KNOWLEDGE • BEAUTY ✦</p>
+    <a class="btn" href="#about">EXPLORE NOW</a>
+  </div>
+  <div class="quick-links">
+    <a class="quick-link" href="#makkah"><span class="quick-icon">🕋</span>MAKKAH</a>
+    <a class="quick-link" href="#madinah"><span class="quick-icon">🕌</span>MADINAH</a>
+    <a class="quick-link" href="#quran"><span class="quick-icon">📖</span>QURAN</a>
+    <a class="quick-link" href="#stories"><span class="quick-icon">🌙</span>STORIES</a>
+    <a class="quick-link" href="#gallery"><span class="quick-icon">✨</span>GALLERY</a>
+    <a class="quick-link" href="#updates"><span class="quick-icon">🔔</span>UPDATES</a>
+  </div>
 </section>
-
+<section id="about" class="about-panel">
+  <h2 class="section-title">WELCOME TO OUR WORLD</h2>
+  <p class="desc">Discover a beautiful collection of Islamic inspiration, stories, places and creative content. Explore the special sections of SHAHAB ZADA.</p>
+</section>
 <section id="features">
-<h2>OUR FEATURES</h2>
-<p class="desc">Discover something special in every section.</p>
-<div class="cards">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600" style="width:100%;border-radius:12px;margin-bottom:20px;">
-<h3>✨ Premium Design</h3>
-<p>Beautiful black and gold luxury design.</p>
-</div>
-<div class="card">
-<video width="100%" autoplay muted loop playsinline style="border-radius:12px;margin-bottom:20px;">
-<source src="https://videos.pexels.com/video-files/3141208/3141208-hd_1920_1080_25fps.mp4" type="video/mp4">
-</video>
-<h3>🚀 Modern Style</h3>
-<p>Modern layout with smooth animations.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" style="width:100%;border-radius:12px;margin-bottom:20px;">
-<h3>📱 Responsive</h3>
-<p>Works on laptops, tablets and phones.</p>
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=600" style="width:100%;border-radius:12px;margin-bottom:20px;">
-<h3>🎬 Video Gallery</h3>
-<p>Watch amazing videos and stories.</p>
-</div>
-
-<div class="card">
-
-  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" style="width:100%;border-radius:12px;margin-bottom:20px;">
-  <h3>🎨 Creative Designs</h3>
-<p>Explore beautiful creative artwork.</p>
-</div>
-
- 
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" style="width:100%;border-radius:12px;margin-bottom:20px;">
-  <h3>⚡ Fast Loading</h3>
-<p>Enjoy a fast and smooth experience.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600" style="width:100%;border-radius:12px;margin-bottom:20px;">
-  <h3>🌟 Special Features</h3>
-<p>Discover amazing website features.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600" style="width:100%;border-radius:12px;margin-bottom:20px;">
-  <h3>🔒 Safe Experience</h3>
-<p>Enjoy simple and secure browsing.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600" style="width:100%;border-radius:12px;margin-bottom:20px;">
-  <h3>👑 AZAN Official</h3>
-<p>Welcome to my official website.</p>
-</div>
-</div>
+  <h2 class="section-title">EXPLORE OUR WORLD</h2>
+  <p class="desc">Choose a section and discover more.</p>
+  <div class="cards">
+    <article class="card" id="makkah"><div class="symbol">🕋</div><h3>MAKKAH</h3><p>Explore the beauty and importance of the Holy City of Makkah.</p></article>
+  <article class="card madinah-card" id="madinah">
+  <img class="madinah-photo"
+  src="https://images.unsplash.com/photo-1724191078796-8a997b989f43?auto=format&fit=crop&w=900&q=85"
+  alt="Masjid Nabawi Madinah">
+  <div class="symbol">🕌</div>
+  <h3>MADINAH</h3>
+  <p>Discover the peaceful and blessed city of Madinah.</p>
+</article>
+    <article class="card" id="quran"><div class="symbol">📖</div><h3>QURAN & DUAS</h3><p>Read and learn about Quranic inspiration and daily duas.</p></article>
+    <article class="card" id="stories"><div class="symbol">🌙</div><h3>ISLAMIC STORIES</h3><p>Enjoy meaningful stories with positive lessons.</p></article>
+    <article class="card" id="gallery"><div class="symbol">✨</div><h3>PHOTO GALLERY</h3><p>View beautiful pictures and special moments.</p></article>
+    <article class="card" id="updates"><div class="symbol">🔔</div><h3>LATEST UPDATES</h3><p>Find the latest news and additions to our website.</p></article>
+  </div>
 </section>
-
-<section class="about">
-<h2>OUR WORLD</h2>
-<p class="desc">A place for creativity, ideas and inspiration. This is SAHAB ZADA.</p>
+<section class="about-panel">
+  <h2 class="section-title">SPECIAL CONTENT</h2>
+  <p class="desc">A special corner for inspiring videos, creative projects and memorable content. More will be added soon.</p>
 </section>
-
-<section id="contact" class="contact">
-<h2>CONTACT US</h2>
-<p class="desc">Connect with SAHAB ZADA</p>
-
-<a href="#" style="display:inline-flex;align-items:center;gap:12px;background:#25D366;color:white;padding:16px 28px;border-radius:40px;text-decoration:none;font-weight:bold;margin-top:30px;">
-
-<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-<path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20z"/>
-</svg>
-
-WHATSAPP
-</a>
+<section id="contact">
+  <h2 class="section-title">STAY CONNECTED</h2>
+  <p class="desc">Thank you for visiting SHAHAB ZADA. Stay connected for more updates.</p>
+  <a class="contact-link" href="https://wa.me/" target="_blank" rel="noopener">WHATSAPP</a>
 </section>
-
-<footer>
-© 2026 SAHAB ZADA | All Rights Reserved
-</footer>
-
-</body>
-</html>
+</main>
+<footer>© 2026 SHAHAB ZADA | ALL RIGHTS RESERVED</footer>
